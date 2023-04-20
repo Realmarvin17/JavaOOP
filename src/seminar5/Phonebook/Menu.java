@@ -13,9 +13,9 @@ public class Menu {
         System.out.println("Выберите действие: ");
 
         int input=in.nextInt();
-        Filemanager run=new Filemanager();
-        Adressbook phones=new Adressbook();
-        phones.Adressbook();
+        FileManager run=new FileManager();
+        AddressBook phones=new AddressBook();
+        phones.Addressable();
 
         switch (input) {
             case 1 -> phones.showAddressBook(phones.pb);
@@ -29,3 +29,4 @@ public class Menu {
         }
     }
 }
+

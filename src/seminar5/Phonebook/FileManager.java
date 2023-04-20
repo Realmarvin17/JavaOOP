@@ -3,7 +3,8 @@ package seminar5.Phonebook;
 import java.util.ArrayList;
 import java.io.*;
 
-public class Filemanager {
+//rename class
+public class FileManager {
     String FILE_PATH="./seminar5/Phonebook/";
     String FILE_NAME_EXPORT="export.csv";
     String FILE_PATH_FULL=FILE_PATH+FILE_NAME_EXPORT;
@@ -32,7 +33,7 @@ public class Filemanager {
         {
             File file=new File(FILE_PATH_FULL);
             FileReader fr=new FileReader(file);
-            ArrayList<Phonebook> result=new ArrayList<>();
+            //remove not usage variable
             BufferedReader reader=new BufferedReader(fr);
             String line=reader.readLine();
 
